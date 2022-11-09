@@ -1,0 +1,70 @@
+/******************************************************************************
+ *
+ * Module: ultrasonic sensor
+ *
+ * File Name: utrasonic.c
+ *
+ * Description: ultrasonic sensor driver
+ *
+ * Author: Youssef Osama
+ *
+ *******************************************************************************/
+#include "ultrasonic.h"
+#include "icu.h"
+#include "gpio.h"
+#include "avr/delay.h"
+#include "common_macros.h"
+#include "avr/io.h"
+void  Ultrasonic_edgeProcessing(void);
+static volatile uint32 newValue=0;
+/*will equal one when the ISR have a new value*/
+static volatile uint8 unReadedValue=0;
+/*
+ * this function is made to initialize the input capture unit and
+ * set the pin of trigger pin of the ultrasonic sensor
+ */
+void Ultrasonic_init(void){
+	SET_BIT(SREG,7);
+	/*configure ICU function*/
+	Icu_ConfigType 	icu_configType;
+	icu_configType.clock=F_CPU_8;
+	icu_configType.edge=RISING;
+	/*initialize ICU*/
+	Icu_init(&icu_configType);
+	/*setting ICU callback function*/
+	Icu_setCallBack(Ultrasonic_edgeProcessing);
+	/*setting up trigger pin to output*/
+	GPIO_setupPinDirection(TRIGGER_PORT_ID, TRIGGER_PIN_ID, PIN_OUTPUT);
+
+
+}
+/*
+ * this function sends the trigger signal to the sensor
+ */
+void Ultrasonic_Trigger(void){
+	GPIO_writePin(TRIGGER_PORT_ID, TRIGGER_PIN_ID, LOGIC_HIGH);
+	_delay_us(15);
+	GPIO_writePin(TRIGGER_PORT_ID, TRIGGER_PIN_ID, LOGIC_LOW);
+}
+uint16 Ultrasonic_readDistance(void){
+	Ultrasonic_Trigger();
+	/*	while(unReadedValue==0){}
+	unReadedValue=0;
+	 */
+	return(uint32n)((double)newValue*0.017);
+}
+/*this function read the value of the timer and calculate the distance*/
+void  Ultrasonic_edgeProcessing(void){
+	static uint8 step = 0;
+	if(step==0){
+		Icu_clearTimerValue();
+		Icu_setEdgeDetectionType(FALLING);
+		step=1;
+	}if(step==1){
+		newValue= Icu_getInputCaptureValue();
+		unReadedValue=1;
+		Icu_setEdgeDetectionType(RISING);
+		step=0;
+	}
+}
+

@@ -1,0 +1,20 @@
+19:10:24 **** Incremental Build of configuration Debug for project ultrasonic_reader ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ultrasonic_reader.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9626 bytes (29.4% Full)
+(.text + .data + .bootloader)
+
+Data:        288 bytes (14.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+19:10:24 Build Finished. 0 errors, 0 warnings. (took 258ms)
+

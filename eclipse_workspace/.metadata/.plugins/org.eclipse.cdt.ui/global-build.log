@@ -1,0 +1,2954 @@
+13:02:20 **** Build of configuration Debug for project ultrasonic_reader ****
+make all 
+Building file: ../icu.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"icu.d" -MT"icu.o" -c -o "icu.o" "../icu.c"
+In file included from ../icu.c:13:
+../icu.h:16:23: error: std_types.h: No such file or directory
+In file included from ../icu.c:13:
+../icu.h:63: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'Icu_getInputCaptureValue'
+../icu.c:14:64: error: common_macros.h: No such file or directory
+../icu.c:23: error: 'NULL_PTR' undeclared here (not in a function)
+../icu.c: In function 'Icu_setCallBack':
+../icu.c:82: warning: function return types not compatible due to 'volatile'
+../icu.c: At top level:
+../icu.c:100: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'Icu_getInputCaptureValue'
+make: *** [icu.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+13:04:21 **** Incremental Build of configuration Debug for project ultrasonic_reader ****
+make all 
+Building file: ../gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"gpio.d" -MT"gpio.o" -c -o "gpio.o" "../gpio.c"
+Finished building: ../gpio.c
+ 
+Building file: ../icu.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"icu.d" -MT"icu.o" -c -o "icu.o" "../icu.c"
+../icu.c: In function 'Icu_setCallBack':
+../icu.c:82: warning: function return types not compatible due to 'volatile'
+Finished building: ../icu.c
+ 
+Building file: ../lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"lcd.d" -MT"lcd.o" -c -o "lcd.o" "../lcd.c"
+In file included from ../lcd.c:13:
+c:/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../lcd.c: In function 'LCD_intgerToString':
+../lcd.c:209: warning: implicit declaration of function 'itoa'
+Finished building: ../lcd.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: ultrasonic_reader.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ultrasonic_reader.map -mmcu=atmega32 -o "ultrasonic_reader.elf"  ./gpio.o ./icu.o ./lcd.o ./main.o   
+Finished building target: ultrasonic_reader.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ultrasonic_reader.elf  >"ultrasonic_reader.lss"
+Finished building: ultrasonic_reader.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ultrasonic_reader.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    7908 bytes (24.1% Full)
+(.text + .data + .bootloader)
+
+Data:         10 bytes (0.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:40:56 **** Incremental Build of configuration Debug for project ultrasonic_reader ****
+make all 
+Building file: ../gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"gpio.d" -MT"gpio.o" -c -o "gpio.o" "../gpio.c"
+Finished building: ../gpio.c
+ 
+Building file: ../icu.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"icu.d" -MT"icu.o" -c -o "icu.o" "../icu.c"
+../icu.c: In function 'Icu_setCallBack':
+../icu.c:82: warning: function return types not compatible due to 'volatile'
+Finished building: ../icu.c
+ 
+Building file: ../lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"lcd.d" -MT"lcd.o" -c -o "lcd.o" "../lcd.c"
+In file included from ../lcd.c:13:
+c:/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../lcd.c: In function 'LCD_intgerToString':
+../lcd.c:209: warning: implicit declaration of function 'itoa'
+Finished building: ../lcd.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building file: ../ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ultrasonic.d" -MT"ultrasonic.o" -c -o "ultrasonic.o" "../ultrasonic.c"
+In file included from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
+In file included from c:/winavr/lib/gcc/../../avr/include/avr/delay.h:37,
+                 from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../ultrasonic.c: In function 'Ultrasonic_init':
+../ultrasonic.c:26: warning: passing argument 1 of 'Icu_setCallBack' from incompatible pointer type
+Finished building: ../ultrasonic.c
+ 
+Building target: ultrasonic_reader.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ultrasonic_reader.map -mmcu=atmega32 -o "ultrasonic_reader.elf"  ./gpio.o ./icu.o ./lcd.o ./main.o ./ultrasonic.o   
+Finished building target: ultrasonic_reader.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ultrasonic_reader.elf  >"ultrasonic_reader.lss"
+Finished building: ultrasonic_reader.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ultrasonic_reader.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9616 bytes (29.3% Full)
+(.text + .data + .bootloader)
+
+Data:        268 bytes (13.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:41:47 **** Incremental Build of configuration Debug for project ultrasonic_reader ****
+make all 
+Building file: ../ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ultrasonic.d" -MT"ultrasonic.o" -c -o "ultrasonic.o" "../ultrasonic.c"
+In file included from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
+In file included from c:/winavr/lib/gcc/../../avr/include/avr/delay.h:37,
+                 from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../ultrasonic.c: In function 'Ultrasonic_init':
+../ultrasonic.c:26: error: 'Ultrasonic_edgeProcessing' undeclared (first use in this function)
+../ultrasonic.c:26: error: (Each undeclared identifier is reported only once
+../ultrasonic.c:26: error: for each function it appears in.)
+make: *** [ultrasonic.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:41:57 **** Incremental Build of configuration Debug for project ultrasonic_reader ****
+make all 
+Building file: ../ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ultrasonic.d" -MT"ultrasonic.o" -c -o "ultrasonic.o" "../ultrasonic.c"
+In file included from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
+In file included from c:/winavr/lib/gcc/../../avr/include/avr/delay.h:37,
+                 from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../ultrasonic.c: In function 'Ultrasonic_init':
+../ultrasonic.c:26: error: 'Icu_setCallBackUltrasonic_edgeProcessing' undeclared (first use in this function)
+../ultrasonic.c:26: error: (Each undeclared identifier is reported only once
+../ultrasonic.c:26: error: for each function it appears in.)
+../ultrasonic.c:26: error: expected ';' before ')' token
+../ultrasonic.c:26: error: expected statement before ')' token
+make: *** [ultrasonic.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:42:05 **** Incremental Build of configuration Debug for project ultrasonic_reader ****
+make all 
+Building file: ../ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ultrasonic.d" -MT"ultrasonic.o" -c -o "ultrasonic.o" "../ultrasonic.c"
+In file included from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
+In file included from c:/winavr/lib/gcc/../../avr/include/avr/delay.h:37,
+                 from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../ultrasonic.c: In function 'Ultrasonic_init':
+../ultrasonic.c:26: error: 'Ultrasonic_edgeProcessing' undeclared (first use in this function)
+../ultrasonic.c:26: error: (Each undeclared identifier is reported only once
+../ultrasonic.c:26: error: for each function it appears in.)
+make: *** [ultrasonic.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:42:10 **** Incremental Build of configuration Debug for project ultrasonic_reader ****
+make all 
+Building file: ../ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ultrasonic.d" -MT"ultrasonic.o" -c -o "ultrasonic.o" "../ultrasonic.c"
+In file included from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
+In file included from c:/winavr/lib/gcc/../../avr/include/avr/delay.h:37,
+                 from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../ultrasonic.c: In function 'Ultrasonic_init':
+../ultrasonic.c:26: error: 'Ultrasonic_edgeProcessing' undeclared (first use in this function)
+../ultrasonic.c:26: error: (Each undeclared identifier is reported only once
+../ultrasonic.c:26: error: for each function it appears in.)
+make: *** [ultrasonic.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:42:50 **** Incremental Build of configuration Debug for project ultrasonic_reader ****
+make all 
+Building file: ../ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ultrasonic.d" -MT"ultrasonic.o" -c -o "ultrasonic.o" "../ultrasonic.c"
+In file included from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
+In file included from c:/winavr/lib/gcc/../../avr/include/avr/delay.h:37,
+                 from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../ultrasonic.c: In function 'Ultrasonic_init':
+../ultrasonic.c:26: error: 'Ultrasonic_edgeProcessing' undeclared (first use in this function)
+../ultrasonic.c:26: error: (Each undeclared identifier is reported only once
+../ultrasonic.c:26: error: for each function it appears in.)
+make: *** [ultrasonic.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:43:00 **** Incremental Build of configuration Debug for project ultrasonic_reader ****
+make all 
+Building file: ../ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ultrasonic.d" -MT"ultrasonic.o" -c -o "ultrasonic.o" "../ultrasonic.c"
+In file included from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
+In file included from c:/winavr/lib/gcc/../../avr/include/avr/delay.h:37,
+                 from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../ultrasonic.c
+ 
+Building target: ultrasonic_reader.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ultrasonic_reader.map -mmcu=atmega32 -o "ultrasonic_reader.elf"  ./gpio.o ./icu.o ./lcd.o ./main.o ./ultrasonic.o   
+Finished building target: ultrasonic_reader.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ultrasonic_reader.elf  >"ultrasonic_reader.lss"
+Finished building: ultrasonic_reader.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ultrasonic_reader.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9608 bytes (29.3% Full)
+(.text + .data + .bootloader)
+
+Data:        268 bytes (13.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:43:08 **** Incremental Build of configuration Debug for project ultrasonic_reader ****
+make all 
+Building file: ../ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ultrasonic.d" -MT"ultrasonic.o" -c -o "ultrasonic.o" "../ultrasonic.c"
+In file included from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
+In file included from c:/winavr/lib/gcc/../../avr/include/avr/delay.h:37,
+                 from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../ultrasonic.c: In function 'Ultrasonic_init':
+../ultrasonic.c:26: error: 'Ultrasonic_edgeProcessing' undeclared (first use in this function)
+../ultrasonic.c:26: error: (Each undeclared identifier is reported only once
+../ultrasonic.c:26: error: for each function it appears in.)
+make: *** [ultrasonic.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:43:59 **** Incremental Build of configuration Debug for project ultrasonic_reader ****
+make all 
+Building file: ../ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ultrasonic.d" -MT"ultrasonic.o" -c -o "ultrasonic.o" "../ultrasonic.c"
+In file included from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
+In file included from c:/winavr/lib/gcc/../../avr/include/avr/delay.h:37,
+                 from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../ultrasonic.c
+ 
+Building target: ultrasonic_reader.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ultrasonic_reader.map -mmcu=atmega32 -o "ultrasonic_reader.elf"  ./gpio.o ./icu.o ./lcd.o ./main.o ./ultrasonic.o   
+Finished building target: ultrasonic_reader.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ultrasonic_reader.elf  >"ultrasonic_reader.lss"
+Finished building: ultrasonic_reader.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ultrasonic_reader.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9616 bytes (29.3% Full)
+(.text + .data + .bootloader)
+
+Data:        268 bytes (13.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:44:34 **** Incremental Build of configuration Debug for project ultrasonic_reader ****
+make all 
+Building file: ../ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ultrasonic.d" -MT"ultrasonic.o" -c -o "ultrasonic.o" "../ultrasonic.c"
+In file included from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
+In file included from c:/winavr/lib/gcc/../../avr/include/avr/delay.h:37,
+                 from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../ultrasonic.c
+ 
+Building target: ultrasonic_reader.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ultrasonic_reader.map -mmcu=atmega32 -o "ultrasonic_reader.elf"  ./gpio.o ./icu.o ./lcd.o ./main.o ./ultrasonic.o   
+Finished building target: ultrasonic_reader.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ultrasonic_reader.elf  >"ultrasonic_reader.lss"
+Finished building: ultrasonic_reader.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ultrasonic_reader.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9616 bytes (29.3% Full)
+(.text + .data + .bootloader)
+
+Data:        268 bytes (13.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+17:01:40 **** Incremental Build of configuration Debug for project ultrasonic_reader ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building file: ../ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ultrasonic.d" -MT"ultrasonic.o" -c -o "ultrasonic.o" "../ultrasonic.c"
+In file included from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
+In file included from c:/winavr/lib/gcc/../../avr/include/avr/delay.h:37,
+                 from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../ultrasonic.c
+ 
+Building target: ultrasonic_reader.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ultrasonic_reader.map -mmcu=atmega32 -o "ultrasonic_reader.elf"  ./gpio.o ./icu.o ./lcd.o ./main.o ./ultrasonic.o   
+Finished building target: ultrasonic_reader.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ultrasonic_reader.elf  >"ultrasonic_reader.lss"
+Finished building: ultrasonic_reader.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ultrasonic_reader.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9436 bytes (28.8% Full)
+(.text + .data + .bootloader)
+
+Data:        281 bytes (13.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+17:18:13 **** Incremental Build of configuration Debug for project ultrasonic_reader ****
+make all 
+Building target: ultrasonic_reader.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ultrasonic_reader.map -mmcu=atmega32 -o "ultrasonic_reader.elf"  ./gpio.o ./icu.o ./lcd.o ./main.o ./ultrasonic.o   
+Finished building target: ultrasonic_reader.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ultrasonic_reader.elf  >"ultrasonic_reader.lss"
+Finished building: ultrasonic_reader.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ultrasonic_reader.elf  "ultrasonic_reader.hex"
+Finished building: ultrasonic_reader.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex ultrasonic_reader.elf  "ultrasonic_reader.eep"
+Finished building: ultrasonic_reader.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ultrasonic_reader.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9436 bytes (28.8% Full)
+(.text + .data + .bootloader)
+
+Data:        281 bytes (13.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+17:19:53 **** Incremental Build of configuration Debug for project ultrasonic_reader ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c:10:21: warning: character constant too long for its type
+../main.c: In function 'main':
+../main.c:10: warning: passing argument 1 of 'LCD_displayString' makes pointer from integer without a cast
+Finished building: ../main.c
+ 
+Building target: ultrasonic_reader.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ultrasonic_reader.map -mmcu=atmega32 -o "ultrasonic_reader.elf"  ./gpio.o ./icu.o ./lcd.o ./main.o ./ultrasonic.o   
+Finished building target: ultrasonic_reader.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ultrasonic_reader.elf  >"ultrasonic_reader.lss"
+Finished building: ultrasonic_reader.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ultrasonic_reader.elf  "ultrasonic_reader.hex"
+Finished building: ultrasonic_reader.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex ultrasonic_reader.elf  "ultrasonic_reader.eep"
+Finished building: ultrasonic_reader.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ultrasonic_reader.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9438 bytes (28.8% Full)
+(.text + .data + .bootloader)
+
+Data:        281 bytes (13.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+17:23:54 **** Incremental Build of configuration Debug for project ultrasonic_reader ****
+make all 
+Building file: ../lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"lcd.d" -MT"lcd.o" -c -o "lcd.o" "../lcd.c"
+In file included from ../lcd.c:13:
+c:/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../lcd.c: In function 'LCD_intgerToString':
+../lcd.c:209: warning: implicit declaration of function 'itoa'
+Finished building: ../lcd.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c:10:21: warning: character constant too long for its type
+../main.c: In function 'main':
+../main.c:10: warning: passing argument 1 of 'LCD_displayString' makes pointer from integer without a cast
+Finished building: ../main.c
+ 
+Building target: ultrasonic_reader.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ultrasonic_reader.map -mmcu=atmega32 -o "ultrasonic_reader.elf"  ./gpio.o ./icu.o ./lcd.o ./main.o ./ultrasonic.o   
+Finished building target: ultrasonic_reader.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ultrasonic_reader.elf  >"ultrasonic_reader.lss"
+Finished building: ultrasonic_reader.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ultrasonic_reader.elf  "ultrasonic_reader.hex"
+Finished building: ultrasonic_reader.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex ultrasonic_reader.elf  "ultrasonic_reader.eep"
+Finished building: ultrasonic_reader.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ultrasonic_reader.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9438 bytes (28.8% Full)
+(.text + .data + .bootloader)
+
+Data:        281 bytes (13.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+17:24:40 **** Incremental Build of configuration Debug for project ultrasonic_reader ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: ultrasonic_reader.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ultrasonic_reader.map -mmcu=atmega32 -o "ultrasonic_reader.elf"  ./gpio.o ./icu.o ./lcd.o ./main.o ./ultrasonic.o   
+Finished building target: ultrasonic_reader.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ultrasonic_reader.elf  >"ultrasonic_reader.lss"
+Finished building: ultrasonic_reader.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ultrasonic_reader.elf  "ultrasonic_reader.hex"
+Finished building: ultrasonic_reader.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex ultrasonic_reader.elf  "ultrasonic_reader.eep"
+Finished building: ultrasonic_reader.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ultrasonic_reader.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9444 bytes (28.8% Full)
+(.text + .data + .bootloader)
+
+Data:        287 bytes (14.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+17:24:46 **** Incremental Build of configuration Debug for project ultrasonic_reader ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: ultrasonic_reader.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ultrasonic_reader.map -mmcu=atmega32 -o "ultrasonic_reader.elf"  ./gpio.o ./icu.o ./lcd.o ./main.o ./ultrasonic.o   
+Finished building target: ultrasonic_reader.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ultrasonic_reader.elf  >"ultrasonic_reader.lss"
+Finished building: ultrasonic_reader.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ultrasonic_reader.elf  "ultrasonic_reader.hex"
+Finished building: ultrasonic_reader.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex ultrasonic_reader.elf  "ultrasonic_reader.eep"
+Finished building: ultrasonic_reader.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ultrasonic_reader.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9444 bytes (28.8% Full)
+(.text + .data + .bootloader)
+
+Data:        287 bytes (14.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+17:29:00 **** Incremental Build of configuration Debug for project ultrasonic_reader ****
+make all 
+Building file: ../lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"lcd.d" -MT"lcd.o" -c -o "lcd.o" "../lcd.c"
+In file included from ../lcd.c:13:
+c:/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../lcd.c: In function 'LCD_intgerToString':
+../lcd.c:209: warning: implicit declaration of function 'itoa'
+Finished building: ../lcd.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: ultrasonic_reader.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ultrasonic_reader.map -mmcu=atmega32 -o "ultrasonic_reader.elf"  ./gpio.o ./icu.o ./lcd.o ./main.o ./ultrasonic.o   
+Finished building target: ultrasonic_reader.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ultrasonic_reader.elf  >"ultrasonic_reader.lss"
+Finished building: ultrasonic_reader.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ultrasonic_reader.elf  "ultrasonic_reader.hex"
+Finished building: ultrasonic_reader.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex ultrasonic_reader.elf  "ultrasonic_reader.eep"
+Finished building: ultrasonic_reader.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ultrasonic_reader.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9444 bytes (28.8% Full)
+(.text + .data + .bootloader)
+
+Data:        287 bytes (14.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+17:29:23 **** Incremental Build of configuration Debug for project ultrasonic_reader ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ultrasonic_reader.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9444 bytes (28.8% Full)
+(.text + .data + .bootloader)
+
+Data:        287 bytes (14.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+17:35:19 **** Incremental Build of configuration Debug for project ultrasonic_reader ****
+make all 
+Building file: ../lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"lcd.d" -MT"lcd.o" -c -o "lcd.o" "../lcd.c"
+In file included from ../lcd.c:13:
+c:/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../lcd.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: ultrasonic_reader.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ultrasonic_reader.map -mmcu=atmega32 -o "ultrasonic_reader.elf"  ./gpio.o ./icu.o ./lcd.o ./main.o ./ultrasonic.o   
+Finished building target: ultrasonic_reader.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ultrasonic_reader.elf  >"ultrasonic_reader.lss"
+Finished building: ultrasonic_reader.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ultrasonic_reader.elf  "ultrasonic_reader.hex"
+Finished building: ultrasonic_reader.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex ultrasonic_reader.elf  "ultrasonic_reader.eep"
+Finished building: ultrasonic_reader.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ultrasonic_reader.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9444 bytes (28.8% Full)
+(.text + .data + .bootloader)
+
+Data:        287 bytes (14.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+17:43:34 **** Incremental Build of configuration Debug for project ultrasonic_reader ****
+make all 
+Building file: ../lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"lcd.d" -MT"lcd.o" -c -o "lcd.o" "../lcd.c"
+In file included from ../lcd.c:13:
+c:/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../lcd.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: ultrasonic_reader.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ultrasonic_reader.map -mmcu=atmega32 -o "ultrasonic_reader.elf"  ./gpio.o ./icu.o ./lcd.o ./main.o ./ultrasonic.o   
+Finished building target: ultrasonic_reader.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ultrasonic_reader.elf  >"ultrasonic_reader.lss"
+Finished building: ultrasonic_reader.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ultrasonic_reader.elf  "ultrasonic_reader.hex"
+Finished building: ultrasonic_reader.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex ultrasonic_reader.elf  "ultrasonic_reader.eep"
+Finished building: ultrasonic_reader.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ultrasonic_reader.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   12096 bytes (36.9% Full)
+(.text + .data + .bootloader)
+
+Data:        287 bytes (14.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+17:43:57 **** Incremental Build of configuration Debug for project ultrasonic_reader ****
+make all 
+Building file: ../lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"lcd.d" -MT"lcd.o" -c -o "lcd.o" "../lcd.c"
+In file included from ../lcd.c:13:
+c:/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../lcd.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: ultrasonic_reader.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ultrasonic_reader.map -mmcu=atmega32 -o "ultrasonic_reader.elf"  ./gpio.o ./icu.o ./lcd.o ./main.o ./ultrasonic.o   
+Finished building target: ultrasonic_reader.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ultrasonic_reader.elf  >"ultrasonic_reader.lss"
+Finished building: ultrasonic_reader.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ultrasonic_reader.elf  "ultrasonic_reader.hex"
+Finished building: ultrasonic_reader.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex ultrasonic_reader.elf  "ultrasonic_reader.eep"
+Finished building: ultrasonic_reader.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ultrasonic_reader.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9444 bytes (28.8% Full)
+(.text + .data + .bootloader)
+
+Data:        287 bytes (14.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+17:44:04 **** Incremental Build of configuration Debug for project ultrasonic_reader ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ultrasonic_reader.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9444 bytes (28.8% Full)
+(.text + .data + .bootloader)
+
+Data:        287 bytes (14.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+17:48:48 **** Incremental Build of configuration Debug for project ultrasonic_reader ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: ultrasonic_reader.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ultrasonic_reader.map -mmcu=atmega32 -o "ultrasonic_reader.elf"  ./gpio.o ./icu.o ./lcd.o ./main.o ./ultrasonic.o   
+Finished building target: ultrasonic_reader.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ultrasonic_reader.elf  >"ultrasonic_reader.lss"
+Finished building: ultrasonic_reader.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ultrasonic_reader.elf  "ultrasonic_reader.hex"
+Finished building: ultrasonic_reader.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex ultrasonic_reader.elf  "ultrasonic_reader.eep"
+Finished building: ultrasonic_reader.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ultrasonic_reader.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9444 bytes (28.8% Full)
+(.text + .data + .bootloader)
+
+Data:        287 bytes (14.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+17:49:01 **** Incremental Build of configuration Debug for project ultrasonic_reader ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ultrasonic_reader.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9444 bytes (28.8% Full)
+(.text + .data + .bootloader)
+
+Data:        287 bytes (14.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+17:49:19 **** Incremental Build of configuration Debug for project ultrasonic_reader ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: ultrasonic_reader.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ultrasonic_reader.map -mmcu=atmega32 -o "ultrasonic_reader.elf"  ./gpio.o ./icu.o ./lcd.o ./main.o ./ultrasonic.o   
+Finished building target: ultrasonic_reader.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ultrasonic_reader.elf  >"ultrasonic_reader.lss"
+Finished building: ultrasonic_reader.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ultrasonic_reader.elf  "ultrasonic_reader.hex"
+Finished building: ultrasonic_reader.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex ultrasonic_reader.elf  "ultrasonic_reader.eep"
+Finished building: ultrasonic_reader.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ultrasonic_reader.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9440 bytes (28.8% Full)
+(.text + .data + .bootloader)
+
+Data:        287 bytes (14.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+17:50:03 **** Incremental Build of configuration Debug for project ultrasonic_reader ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building file: ../ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ultrasonic.d" -MT"ultrasonic.o" -c -o "ultrasonic.o" "../ultrasonic.c"
+In file included from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
+In file included from c:/winavr/lib/gcc/../../avr/include/avr/delay.h:37,
+                 from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../ultrasonic.c
+ 
+Building target: ultrasonic_reader.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ultrasonic_reader.map -mmcu=atmega32 -o "ultrasonic_reader.elf"  ./gpio.o ./icu.o ./lcd.o ./main.o ./ultrasonic.o   
+Finished building target: ultrasonic_reader.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ultrasonic_reader.elf  >"ultrasonic_reader.lss"
+Finished building: ultrasonic_reader.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ultrasonic_reader.elf  "ultrasonic_reader.hex"
+Finished building: ultrasonic_reader.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex ultrasonic_reader.elf  "ultrasonic_reader.eep"
+Finished building: ultrasonic_reader.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ultrasonic_reader.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9440 bytes (28.8% Full)
+(.text + .data + .bootloader)
+
+Data:        287 bytes (14.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+17:50:20 **** Incremental Build of configuration Debug for project ultrasonic_reader ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ultrasonic_reader.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9440 bytes (28.8% Full)
+(.text + .data + .bootloader)
+
+Data:        287 bytes (14.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+17:54:39 **** Incremental Build of configuration Debug for project ultrasonic_reader ****
+make all 
+Building file: ../ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ultrasonic.d" -MT"ultrasonic.o" -c -o "ultrasonic.o" "../ultrasonic.c"
+In file included from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
+In file included from c:/winavr/lib/gcc/../../avr/include/avr/delay.h:37,
+                 from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../ultrasonic.c
+ 
+Building target: ultrasonic_reader.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ultrasonic_reader.map -mmcu=atmega32 -o "ultrasonic_reader.elf"  ./gpio.o ./icu.o ./lcd.o ./main.o ./ultrasonic.o   
+Finished building target: ultrasonic_reader.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ultrasonic_reader.elf  >"ultrasonic_reader.lss"
+Finished building: ultrasonic_reader.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ultrasonic_reader.elf  "ultrasonic_reader.hex"
+Finished building: ultrasonic_reader.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex ultrasonic_reader.elf  "ultrasonic_reader.eep"
+Finished building: ultrasonic_reader.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ultrasonic_reader.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9450 bytes (28.8% Full)
+(.text + .data + .bootloader)
+
+Data:        287 bytes (14.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+17:59:26 **** Incremental Build of configuration Debug for project ultrasonic_reader ****
+make all 
+Building file: ../ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ultrasonic.d" -MT"ultrasonic.o" -c -o "ultrasonic.o" "../ultrasonic.c"
+In file included from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
+In file included from c:/winavr/lib/gcc/../../avr/include/avr/delay.h:37,
+                 from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../ultrasonic.c
+ 
+Building target: ultrasonic_reader.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ultrasonic_reader.map -mmcu=atmega32 -o "ultrasonic_reader.elf"  ./gpio.o ./icu.o ./lcd.o ./main.o ./ultrasonic.o   
+Finished building target: ultrasonic_reader.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ultrasonic_reader.elf  >"ultrasonic_reader.lss"
+Finished building: ultrasonic_reader.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ultrasonic_reader.elf  "ultrasonic_reader.hex"
+Finished building: ultrasonic_reader.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex ultrasonic_reader.elf  "ultrasonic_reader.eep"
+Finished building: ultrasonic_reader.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ultrasonic_reader.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9482 bytes (28.9% Full)
+(.text + .data + .bootloader)
+
+Data:        288 bytes (14.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:00:43 **** Incremental Build of configuration Debug for project ultrasonic_reader ****
+make all 
+Building file: ../ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ultrasonic.d" -MT"ultrasonic.o" -c -o "ultrasonic.o" "../ultrasonic.c"
+In file included from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
+In file included from c:/winavr/lib/gcc/../../avr/include/avr/delay.h:37,
+                 from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../ultrasonic.c
+ 
+Building target: ultrasonic_reader.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ultrasonic_reader.map -mmcu=atmega32 -o "ultrasonic_reader.elf"  ./gpio.o ./icu.o ./lcd.o ./main.o ./ultrasonic.o   
+Finished building target: ultrasonic_reader.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ultrasonic_reader.elf  >"ultrasonic_reader.lss"
+Finished building: ultrasonic_reader.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ultrasonic_reader.elf  "ultrasonic_reader.hex"
+Finished building: ultrasonic_reader.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex ultrasonic_reader.elf  "ultrasonic_reader.eep"
+Finished building: ultrasonic_reader.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ultrasonic_reader.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9488 bytes (29.0% Full)
+(.text + .data + .bootloader)
+
+Data:        288 bytes (14.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:01:35 **** Incremental Build of configuration Debug for project ultrasonic_reader ****
+make all 
+Building file: ../ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ultrasonic.d" -MT"ultrasonic.o" -c -o "ultrasonic.o" "../ultrasonic.c"
+In file included from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
+In file included from c:/winavr/lib/gcc/../../avr/include/avr/delay.h:37,
+                 from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../ultrasonic.c
+ 
+Building target: ultrasonic_reader.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ultrasonic_reader.map -mmcu=atmega32 -o "ultrasonic_reader.elf"  ./gpio.o ./icu.o ./lcd.o ./main.o ./ultrasonic.o   
+Finished building target: ultrasonic_reader.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ultrasonic_reader.elf  >"ultrasonic_reader.lss"
+Finished building: ultrasonic_reader.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ultrasonic_reader.elf  "ultrasonic_reader.hex"
+Finished building: ultrasonic_reader.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex ultrasonic_reader.elf  "ultrasonic_reader.eep"
+Finished building: ultrasonic_reader.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ultrasonic_reader.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9476 bytes (28.9% Full)
+(.text + .data + .bootloader)
+
+Data:        288 bytes (14.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:02:32 **** Incremental Build of configuration Debug for project ultrasonic_reader ****
+make all 
+Building file: ../ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ultrasonic.d" -MT"ultrasonic.o" -c -o "ultrasonic.o" "../ultrasonic.c"
+In file included from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
+In file included from c:/winavr/lib/gcc/../../avr/include/avr/delay.h:37,
+                 from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../ultrasonic.c
+ 
+Building target: ultrasonic_reader.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ultrasonic_reader.map -mmcu=atmega32 -o "ultrasonic_reader.elf"  ./gpio.o ./icu.o ./lcd.o ./main.o ./ultrasonic.o   
+Finished building target: ultrasonic_reader.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ultrasonic_reader.elf  >"ultrasonic_reader.lss"
+Finished building: ultrasonic_reader.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ultrasonic_reader.elf  "ultrasonic_reader.hex"
+Finished building: ultrasonic_reader.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex ultrasonic_reader.elf  "ultrasonic_reader.eep"
+Finished building: ultrasonic_reader.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ultrasonic_reader.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9112 bytes (27.8% Full)
+(.text + .data + .bootloader)
+
+Data:        288 bytes (14.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:04:30 **** Incremental Build of configuration Debug for project ultrasonic_reader ****
+make all 
+Building file: ../ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ultrasonic.d" -MT"ultrasonic.o" -c -o "ultrasonic.o" "../ultrasonic.c"
+In file included from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
+In file included from c:/winavr/lib/gcc/../../avr/include/avr/delay.h:37,
+                 from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../ultrasonic.c: In function 'Ultrasonic_edgeProcessing':
+../ultrasonic.c:59: warning: unused variable 'icuValue'
+Finished building: ../ultrasonic.c
+ 
+Building target: ultrasonic_reader.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ultrasonic_reader.map -mmcu=atmega32 -o "ultrasonic_reader.elf"  ./gpio.o ./icu.o ./lcd.o ./main.o ./ultrasonic.o   
+Finished building target: ultrasonic_reader.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ultrasonic_reader.elf  >"ultrasonic_reader.lss"
+Finished building: ultrasonic_reader.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ultrasonic_reader.elf  "ultrasonic_reader.hex"
+Finished building: ultrasonic_reader.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex ultrasonic_reader.elf  "ultrasonic_reader.eep"
+Finished building: ultrasonic_reader.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ultrasonic_reader.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8426 bytes (25.7% Full)
+(.text + .data + .bootloader)
+
+Data:         32 bytes (1.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:07:09 **** Incremental Build of configuration Debug for project ultrasonic_reader ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building file: ../ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ultrasonic.d" -MT"ultrasonic.o" -c -o "ultrasonic.o" "../ultrasonic.c"
+In file included from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
+In file included from c:/winavr/lib/gcc/../../avr/include/avr/delay.h:37,
+                 from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../ultrasonic.c
+ 
+Building target: ultrasonic_reader.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ultrasonic_reader.map -mmcu=atmega32 -o "ultrasonic_reader.elf"  ./gpio.o ./icu.o ./lcd.o ./main.o ./ultrasonic.o   
+Finished building target: ultrasonic_reader.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ultrasonic_reader.elf  >"ultrasonic_reader.lss"
+Finished building: ultrasonic_reader.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ultrasonic_reader.elf  "ultrasonic_reader.hex"
+Finished building: ultrasonic_reader.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex ultrasonic_reader.elf  "ultrasonic_reader.eep"
+Finished building: ultrasonic_reader.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ultrasonic_reader.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9490 bytes (29.0% Full)
+(.text + .data + .bootloader)
+
+Data:        288 bytes (14.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:08:15 **** Incremental Build of configuration Debug for project ultrasonic_reader ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:3:
+c:/winavr/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
+In file included from c:/winavr/lib/gcc/../../avr/include/avr/delay.h:37,
+                 from ../main.c:3:
+c:/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: ultrasonic_reader.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ultrasonic_reader.map -mmcu=atmega32 -o "ultrasonic_reader.elf"  ./gpio.o ./icu.o ./lcd.o ./main.o ./ultrasonic.o   
+Finished building target: ultrasonic_reader.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ultrasonic_reader.elf  >"ultrasonic_reader.lss"
+Finished building: ultrasonic_reader.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ultrasonic_reader.elf  "ultrasonic_reader.hex"
+Finished building: ultrasonic_reader.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex ultrasonic_reader.elf  "ultrasonic_reader.eep"
+Finished building: ultrasonic_reader.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ultrasonic_reader.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9730 bytes (29.7% Full)
+(.text + .data + .bootloader)
+
+Data:        288 bytes (14.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:08:28 **** Incremental Build of configuration Debug for project ultrasonic_reader ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:3:
+c:/winavr/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
+In file included from c:/winavr/lib/gcc/../../avr/include/avr/delay.h:37,
+                 from ../main.c:3:
+c:/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: ultrasonic_reader.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ultrasonic_reader.map -mmcu=atmega32 -o "ultrasonic_reader.elf"  ./gpio.o ./icu.o ./lcd.o ./main.o ./ultrasonic.o   
+Finished building target: ultrasonic_reader.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ultrasonic_reader.elf  >"ultrasonic_reader.lss"
+Finished building: ultrasonic_reader.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ultrasonic_reader.elf  "ultrasonic_reader.hex"
+Finished building: ultrasonic_reader.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex ultrasonic_reader.elf  "ultrasonic_reader.eep"
+Finished building: ultrasonic_reader.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ultrasonic_reader.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9730 bytes (29.7% Full)
+(.text + .data + .bootloader)
+
+Data:        288 bytes (14.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:09:03 **** Incremental Build of configuration Debug for project ultrasonic_reader ****
+make all 
+Building file: ../ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ultrasonic.d" -MT"ultrasonic.o" -c -o "ultrasonic.o" "../ultrasonic.c"
+In file included from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
+In file included from c:/winavr/lib/gcc/../../avr/include/avr/delay.h:37,
+                 from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../ultrasonic.c
+ 
+Building target: ultrasonic_reader.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ultrasonic_reader.map -mmcu=atmega32 -o "ultrasonic_reader.elf"  ./gpio.o ./icu.o ./lcd.o ./main.o ./ultrasonic.o   
+Finished building target: ultrasonic_reader.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ultrasonic_reader.elf  >"ultrasonic_reader.lss"
+Finished building: ultrasonic_reader.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ultrasonic_reader.elf  "ultrasonic_reader.hex"
+Finished building: ultrasonic_reader.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex ultrasonic_reader.elf  "ultrasonic_reader.eep"
+Finished building: ultrasonic_reader.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ultrasonic_reader.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9730 bytes (29.7% Full)
+(.text + .data + .bootloader)
+
+Data:        288 bytes (14.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:09:20 **** Incremental Build of configuration Debug for project ultrasonic_reader ****
+make all 
+Building file: ../ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ultrasonic.d" -MT"ultrasonic.o" -c -o "ultrasonic.o" "../ultrasonic.c"
+In file included from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
+In file included from c:/winavr/lib/gcc/../../avr/include/avr/delay.h:37,
+                 from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../ultrasonic.c
+ 
+Building target: ultrasonic_reader.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ultrasonic_reader.map -mmcu=atmega32 -o "ultrasonic_reader.elf"  ./gpio.o ./icu.o ./lcd.o ./main.o ./ultrasonic.o   
+Finished building target: ultrasonic_reader.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ultrasonic_reader.elf  >"ultrasonic_reader.lss"
+Finished building: ultrasonic_reader.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ultrasonic_reader.elf  "ultrasonic_reader.hex"
+Finished building: ultrasonic_reader.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex ultrasonic_reader.elf  "ultrasonic_reader.eep"
+Finished building: ultrasonic_reader.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ultrasonic_reader.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9730 bytes (29.7% Full)
+(.text + .data + .bootloader)
+
+Data:        288 bytes (14.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:09:57 **** Incremental Build of configuration Debug for project ultrasonic_reader ****
+make all 
+Building file: ../ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ultrasonic.d" -MT"ultrasonic.o" -c -o "ultrasonic.o" "../ultrasonic.c"
+In file included from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
+In file included from c:/winavr/lib/gcc/../../avr/include/avr/delay.h:37,
+                 from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../ultrasonic.c
+ 
+Building target: ultrasonic_reader.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ultrasonic_reader.map -mmcu=atmega32 -o "ultrasonic_reader.elf"  ./gpio.o ./icu.o ./lcd.o ./main.o ./ultrasonic.o   
+Finished building target: ultrasonic_reader.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ultrasonic_reader.elf  >"ultrasonic_reader.lss"
+Finished building: ultrasonic_reader.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ultrasonic_reader.elf  "ultrasonic_reader.hex"
+Finished building: ultrasonic_reader.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex ultrasonic_reader.elf  "ultrasonic_reader.eep"
+Finished building: ultrasonic_reader.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ultrasonic_reader.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9730 bytes (29.7% Full)
+(.text + .data + .bootloader)
+
+Data:        288 bytes (14.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:11:01 **** Incremental Build of configuration Debug for project ultrasonic_reader ****
+make all 
+Building file: ../ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ultrasonic.d" -MT"ultrasonic.o" -c -o "ultrasonic.o" "../ultrasonic.c"
+In file included from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
+In file included from c:/winavr/lib/gcc/../../avr/include/avr/delay.h:37,
+                 from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../ultrasonic.c
+ 
+Building target: ultrasonic_reader.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ultrasonic_reader.map -mmcu=atmega32 -o "ultrasonic_reader.elf"  ./gpio.o ./icu.o ./lcd.o ./main.o ./ultrasonic.o   
+Finished building target: ultrasonic_reader.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ultrasonic_reader.elf  >"ultrasonic_reader.lss"
+Finished building: ultrasonic_reader.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ultrasonic_reader.elf  "ultrasonic_reader.hex"
+Finished building: ultrasonic_reader.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex ultrasonic_reader.elf  "ultrasonic_reader.eep"
+Finished building: ultrasonic_reader.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ultrasonic_reader.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9744 bytes (29.7% Full)
+(.text + .data + .bootloader)
+
+Data:        288 bytes (14.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:12:01 **** Incremental Build of configuration Debug for project ultrasonic_reader ****
+make all 
+Building file: ../ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ultrasonic.d" -MT"ultrasonic.o" -c -o "ultrasonic.o" "../ultrasonic.c"
+In file included from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
+In file included from c:/winavr/lib/gcc/../../avr/include/avr/delay.h:37,
+                 from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../ultrasonic.c
+ 
+Building target: ultrasonic_reader.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ultrasonic_reader.map -mmcu=atmega32 -o "ultrasonic_reader.elf"  ./gpio.o ./icu.o ./lcd.o ./main.o ./ultrasonic.o   
+Finished building target: ultrasonic_reader.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ultrasonic_reader.elf  >"ultrasonic_reader.lss"
+Finished building: ultrasonic_reader.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ultrasonic_reader.elf  "ultrasonic_reader.hex"
+Finished building: ultrasonic_reader.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex ultrasonic_reader.elf  "ultrasonic_reader.eep"
+Finished building: ultrasonic_reader.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ultrasonic_reader.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9400 bytes (28.7% Full)
+(.text + .data + .bootloader)
+
+Data:        288 bytes (14.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:12:15 **** Incremental Build of configuration Debug for project ultrasonic_reader ****
+make all 
+Building file: ../ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ultrasonic.d" -MT"ultrasonic.o" -c -o "ultrasonic.o" "../ultrasonic.c"
+In file included from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
+In file included from c:/winavr/lib/gcc/../../avr/include/avr/delay.h:37,
+                 from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../ultrasonic.c
+ 
+Building target: ultrasonic_reader.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ultrasonic_reader.map -mmcu=atmega32 -o "ultrasonic_reader.elf"  ./gpio.o ./icu.o ./lcd.o ./main.o ./ultrasonic.o   
+Finished building target: ultrasonic_reader.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ultrasonic_reader.elf  >"ultrasonic_reader.lss"
+Finished building: ultrasonic_reader.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ultrasonic_reader.elf  "ultrasonic_reader.hex"
+Finished building: ultrasonic_reader.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex ultrasonic_reader.elf  "ultrasonic_reader.eep"
+Finished building: ultrasonic_reader.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ultrasonic_reader.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9400 bytes (28.7% Full)
+(.text + .data + .bootloader)
+
+Data:        288 bytes (14.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:12:41 **** Incremental Build of configuration Debug for project ultrasonic_reader ****
+make all 
+Building file: ../ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ultrasonic.d" -MT"ultrasonic.o" -c -o "ultrasonic.o" "../ultrasonic.c"
+In file included from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
+In file included from c:/winavr/lib/gcc/../../avr/include/avr/delay.h:37,
+                 from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../ultrasonic.c
+ 
+Building target: ultrasonic_reader.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ultrasonic_reader.map -mmcu=atmega32 -o "ultrasonic_reader.elf"  ./gpio.o ./icu.o ./lcd.o ./main.o ./ultrasonic.o   
+Finished building target: ultrasonic_reader.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ultrasonic_reader.elf  >"ultrasonic_reader.lss"
+Finished building: ultrasonic_reader.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ultrasonic_reader.elf  "ultrasonic_reader.hex"
+Finished building: ultrasonic_reader.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex ultrasonic_reader.elf  "ultrasonic_reader.eep"
+Finished building: ultrasonic_reader.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ultrasonic_reader.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9400 bytes (28.7% Full)
+(.text + .data + .bootloader)
+
+Data:        288 bytes (14.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:14:33 **** Incremental Build of configuration Debug for project ultrasonic_reader ****
+make all 
+Building file: ../ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ultrasonic.d" -MT"ultrasonic.o" -c -o "ultrasonic.o" "../ultrasonic.c"
+In file included from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
+In file included from c:/winavr/lib/gcc/../../avr/include/avr/delay.h:37,
+                 from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../ultrasonic.c: In function 'Ultrasonic_edgeProcessing':
+../ultrasonic.c:63: warning: unused variable 'icuValue'
+Finished building: ../ultrasonic.c
+ 
+Building target: ultrasonic_reader.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ultrasonic_reader.map -mmcu=atmega32 -o "ultrasonic_reader.elf"  ./gpio.o ./icu.o ./lcd.o ./main.o ./ultrasonic.o   
+Finished building target: ultrasonic_reader.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ultrasonic_reader.elf  >"ultrasonic_reader.lss"
+Finished building: ultrasonic_reader.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ultrasonic_reader.elf  "ultrasonic_reader.hex"
+Finished building: ultrasonic_reader.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex ultrasonic_reader.elf  "ultrasonic_reader.eep"
+Finished building: ultrasonic_reader.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ultrasonic_reader.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8694 bytes (26.5% Full)
+(.text + .data + .bootloader)
+
+Data:         32 bytes (1.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:15:45 **** Incremental Build of configuration Debug for project ultrasonic_reader ****
+make all 
+Building file: ../ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ultrasonic.d" -MT"ultrasonic.o" -c -o "ultrasonic.o" "../ultrasonic.c"
+In file included from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
+In file included from c:/winavr/lib/gcc/../../avr/include/avr/delay.h:37,
+                 from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../ultrasonic.c
+ 
+Building target: ultrasonic_reader.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ultrasonic_reader.map -mmcu=atmega32 -o "ultrasonic_reader.elf"  ./gpio.o ./icu.o ./lcd.o ./main.o ./ultrasonic.o   
+Finished building target: ultrasonic_reader.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ultrasonic_reader.elf  >"ultrasonic_reader.lss"
+Finished building: ultrasonic_reader.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ultrasonic_reader.elf  "ultrasonic_reader.hex"
+Finished building: ultrasonic_reader.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex ultrasonic_reader.elf  "ultrasonic_reader.eep"
+Finished building: ultrasonic_reader.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ultrasonic_reader.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9390 bytes (28.7% Full)
+(.text + .data + .bootloader)
+
+Data:        288 bytes (14.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:16:13 **** Incremental Build of configuration Debug for project ultrasonic_reader ****
+make all 
+Building file: ../ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ultrasonic.d" -MT"ultrasonic.o" -c -o "ultrasonic.o" "../ultrasonic.c"
+In file included from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
+In file included from c:/winavr/lib/gcc/../../avr/include/avr/delay.h:37,
+                 from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../ultrasonic.c
+ 
+Building target: ultrasonic_reader.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ultrasonic_reader.map -mmcu=atmega32 -o "ultrasonic_reader.elf"  ./gpio.o ./icu.o ./lcd.o ./main.o ./ultrasonic.o   
+Finished building target: ultrasonic_reader.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ultrasonic_reader.elf  >"ultrasonic_reader.lss"
+Finished building: ultrasonic_reader.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ultrasonic_reader.elf  "ultrasonic_reader.hex"
+Finished building: ultrasonic_reader.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex ultrasonic_reader.elf  "ultrasonic_reader.eep"
+Finished building: ultrasonic_reader.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ultrasonic_reader.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9388 bytes (28.6% Full)
+(.text + .data + .bootloader)
+
+Data:        288 bytes (14.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:17:09 **** Incremental Build of configuration Debug for project ultrasonic_reader ****
+make all 
+Building file: ../ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ultrasonic.d" -MT"ultrasonic.o" -c -o "ultrasonic.o" "../ultrasonic.c"
+In file included from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
+In file included from c:/winavr/lib/gcc/../../avr/include/avr/delay.h:37,
+                 from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../ultrasonic.c
+ 
+Building target: ultrasonic_reader.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ultrasonic_reader.map -mmcu=atmega32 -o "ultrasonic_reader.elf"  ./gpio.o ./icu.o ./lcd.o ./main.o ./ultrasonic.o   
+Finished building target: ultrasonic_reader.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ultrasonic_reader.elf  >"ultrasonic_reader.lss"
+Finished building: ultrasonic_reader.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ultrasonic_reader.elf  "ultrasonic_reader.hex"
+Finished building: ultrasonic_reader.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex ultrasonic_reader.elf  "ultrasonic_reader.eep"
+Finished building: ultrasonic_reader.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ultrasonic_reader.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9376 bytes (28.6% Full)
+(.text + .data + .bootloader)
+
+Data:        288 bytes (14.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:18:51 **** Incremental Build of configuration Debug for project ultrasonic_reader ****
+make all 
+Building file: ../ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ultrasonic.d" -MT"ultrasonic.o" -c -o "ultrasonic.o" "../ultrasonic.c"
+In file included from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
+In file included from c:/winavr/lib/gcc/../../avr/include/avr/delay.h:37,
+                 from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../ultrasonic.c
+ 
+Building target: ultrasonic_reader.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ultrasonic_reader.map -mmcu=atmega32 -o "ultrasonic_reader.elf"  ./gpio.o ./icu.o ./lcd.o ./main.o ./ultrasonic.o   
+Finished building target: ultrasonic_reader.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ultrasonic_reader.elf  >"ultrasonic_reader.lss"
+Finished building: ultrasonic_reader.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ultrasonic_reader.elf  "ultrasonic_reader.hex"
+Finished building: ultrasonic_reader.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex ultrasonic_reader.elf  "ultrasonic_reader.eep"
+Finished building: ultrasonic_reader.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ultrasonic_reader.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9872 bytes (30.1% Full)
+(.text + .data + .bootloader)
+
+Data:        288 bytes (14.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:19:08 **** Incremental Build of configuration Debug for project ultrasonic_reader ****
+make all 
+Building file: ../ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ultrasonic.d" -MT"ultrasonic.o" -c -o "ultrasonic.o" "../ultrasonic.c"
+In file included from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
+In file included from c:/winavr/lib/gcc/../../avr/include/avr/delay.h:37,
+                 from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../ultrasonic.c
+ 
+Building target: ultrasonic_reader.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ultrasonic_reader.map -mmcu=atmega32 -o "ultrasonic_reader.elf"  ./gpio.o ./icu.o ./lcd.o ./main.o ./ultrasonic.o   
+Finished building target: ultrasonic_reader.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ultrasonic_reader.elf  >"ultrasonic_reader.lss"
+Finished building: ultrasonic_reader.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ultrasonic_reader.elf  "ultrasonic_reader.hex"
+Finished building: ultrasonic_reader.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex ultrasonic_reader.elf  "ultrasonic_reader.eep"
+Finished building: ultrasonic_reader.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ultrasonic_reader.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9872 bytes (30.1% Full)
+(.text + .data + .bootloader)
+
+Data:        288 bytes (14.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:39:23 **** Incremental Build of configuration Debug for project ultrasonic_reader ****
+make all 
+Building file: ../ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ultrasonic.d" -MT"ultrasonic.o" -c -o "ultrasonic.o" "../ultrasonic.c"
+In file included from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
+In file included from c:/winavr/lib/gcc/../../avr/include/avr/delay.h:37,
+                 from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../ultrasonic.c
+ 
+Building target: ultrasonic_reader.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ultrasonic_reader.map -mmcu=atmega32 -o "ultrasonic_reader.elf"  ./gpio.o ./icu.o ./lcd.o ./main.o ./ultrasonic.o   
+Finished building target: ultrasonic_reader.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ultrasonic_reader.elf  >"ultrasonic_reader.lss"
+Finished building: ultrasonic_reader.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ultrasonic_reader.elf  "ultrasonic_reader.hex"
+Finished building: ultrasonic_reader.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex ultrasonic_reader.elf  "ultrasonic_reader.eep"
+Finished building: ultrasonic_reader.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ultrasonic_reader.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9886 bytes (30.2% Full)
+(.text + .data + .bootloader)
+
+Data:        288 bytes (14.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:40:25 **** Incremental Build of configuration Debug for project ultrasonic_reader ****
+make all 
+Building file: ../ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ultrasonic.d" -MT"ultrasonic.o" -c -o "ultrasonic.o" "../ultrasonic.c"
+In file included from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
+In file included from c:/winavr/lib/gcc/../../avr/include/avr/delay.h:37,
+                 from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../ultrasonic.c
+ 
+Building target: ultrasonic_reader.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ultrasonic_reader.map -mmcu=atmega32 -o "ultrasonic_reader.elf"  ./gpio.o ./icu.o ./lcd.o ./main.o ./ultrasonic.o   
+Finished building target: ultrasonic_reader.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ultrasonic_reader.elf  >"ultrasonic_reader.lss"
+Finished building: ultrasonic_reader.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ultrasonic_reader.elf  "ultrasonic_reader.hex"
+Finished building: ultrasonic_reader.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex ultrasonic_reader.elf  "ultrasonic_reader.eep"
+Finished building: ultrasonic_reader.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ultrasonic_reader.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9886 bytes (30.2% Full)
+(.text + .data + .bootloader)
+
+Data:        288 bytes (14.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:41:38 **** Incremental Build of configuration Debug for project ultrasonic_reader ****
+make all 
+Building file: ../ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ultrasonic.d" -MT"ultrasonic.o" -c -o "ultrasonic.o" "../ultrasonic.c"
+In file included from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
+In file included from c:/winavr/lib/gcc/../../avr/include/avr/delay.h:37,
+                 from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../ultrasonic.c
+ 
+Building target: ultrasonic_reader.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ultrasonic_reader.map -mmcu=atmega32 -o "ultrasonic_reader.elf"  ./gpio.o ./icu.o ./lcd.o ./main.o ./ultrasonic.o   
+Finished building target: ultrasonic_reader.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ultrasonic_reader.elf  >"ultrasonic_reader.lss"
+Finished building: ultrasonic_reader.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ultrasonic_reader.elf  "ultrasonic_reader.hex"
+Finished building: ultrasonic_reader.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex ultrasonic_reader.elf  "ultrasonic_reader.eep"
+Finished building: ultrasonic_reader.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ultrasonic_reader.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9872 bytes (30.1% Full)
+(.text + .data + .bootloader)
+
+Data:        288 bytes (14.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:41:55 **** Incremental Build of configuration Debug for project ultrasonic_reader ****
+make all 
+Building file: ../ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ultrasonic.d" -MT"ultrasonic.o" -c -o "ultrasonic.o" "../ultrasonic.c"
+In file included from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
+In file included from c:/winavr/lib/gcc/../../avr/include/avr/delay.h:37,
+                 from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../ultrasonic.c
+ 
+Building target: ultrasonic_reader.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ultrasonic_reader.map -mmcu=atmega32 -o "ultrasonic_reader.elf"  ./gpio.o ./icu.o ./lcd.o ./main.o ./ultrasonic.o   
+Finished building target: ultrasonic_reader.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ultrasonic_reader.elf  >"ultrasonic_reader.lss"
+Finished building: ultrasonic_reader.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ultrasonic_reader.elf  "ultrasonic_reader.hex"
+Finished building: ultrasonic_reader.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex ultrasonic_reader.elf  "ultrasonic_reader.eep"
+Finished building: ultrasonic_reader.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ultrasonic_reader.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9872 bytes (30.1% Full)
+(.text + .data + .bootloader)
+
+Data:        288 bytes (14.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:45:20 **** Incremental Build of configuration Debug for project ultrasonic_reader ****
+make all 
+Building file: ../ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ultrasonic.d" -MT"ultrasonic.o" -c -o "ultrasonic.o" "../ultrasonic.c"
+In file included from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
+In file included from c:/winavr/lib/gcc/../../avr/include/avr/delay.h:37,
+                 from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../ultrasonic.c
+ 
+Building target: ultrasonic_reader.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ultrasonic_reader.map -mmcu=atmega32 -o "ultrasonic_reader.elf"  ./gpio.o ./icu.o ./lcd.o ./main.o ./ultrasonic.o   
+Finished building target: ultrasonic_reader.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ultrasonic_reader.elf  >"ultrasonic_reader.lss"
+Finished building: ultrasonic_reader.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ultrasonic_reader.elf  "ultrasonic_reader.hex"
+Finished building: ultrasonic_reader.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex ultrasonic_reader.elf  "ultrasonic_reader.eep"
+Finished building: ultrasonic_reader.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ultrasonic_reader.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9862 bytes (30.1% Full)
+(.text + .data + .bootloader)
+
+Data:        288 bytes (14.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:46:37 **** Incremental Build of configuration Debug for project ultrasonic_reader ****
+make all 
+Building file: ../ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ultrasonic.d" -MT"ultrasonic.o" -c -o "ultrasonic.o" "../ultrasonic.c"
+In file included from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
+In file included from c:/winavr/lib/gcc/../../avr/include/avr/delay.h:37,
+                 from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../ultrasonic.c
+ 
+Building target: ultrasonic_reader.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ultrasonic_reader.map -mmcu=atmega32 -o "ultrasonic_reader.elf"  ./gpio.o ./icu.o ./lcd.o ./main.o ./ultrasonic.o   
+Finished building target: ultrasonic_reader.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ultrasonic_reader.elf  >"ultrasonic_reader.lss"
+Finished building: ultrasonic_reader.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ultrasonic_reader.elf  "ultrasonic_reader.hex"
+Finished building: ultrasonic_reader.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex ultrasonic_reader.elf  "ultrasonic_reader.eep"
+Finished building: ultrasonic_reader.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ultrasonic_reader.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9878 bytes (30.1% Full)
+(.text + .data + .bootloader)
+
+Data:        290 bytes (14.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:46:50 **** Incremental Build of configuration Debug for project ultrasonic_reader ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ultrasonic_reader.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9878 bytes (30.1% Full)
+(.text + .data + .bootloader)
+
+Data:        290 bytes (14.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:47:02 **** Incremental Build of configuration Debug for project ultrasonic_reader ****
+make all 
+Building file: ../ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ultrasonic.d" -MT"ultrasonic.o" -c -o "ultrasonic.o" "../ultrasonic.c"
+In file included from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
+In file included from c:/winavr/lib/gcc/../../avr/include/avr/delay.h:37,
+                 from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../ultrasonic.c
+ 
+Building target: ultrasonic_reader.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ultrasonic_reader.map -mmcu=atmega32 -o "ultrasonic_reader.elf"  ./gpio.o ./icu.o ./lcd.o ./main.o ./ultrasonic.o   
+Finished building target: ultrasonic_reader.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ultrasonic_reader.elf  >"ultrasonic_reader.lss"
+Finished building: ultrasonic_reader.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ultrasonic_reader.elf  "ultrasonic_reader.hex"
+Finished building: ultrasonic_reader.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex ultrasonic_reader.elf  "ultrasonic_reader.eep"
+Finished building: ultrasonic_reader.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ultrasonic_reader.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9878 bytes (30.1% Full)
+(.text + .data + .bootloader)
+
+Data:        290 bytes (14.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:47:41 **** Incremental Build of configuration Debug for project ultrasonic_reader ****
+make all 
+Building file: ../ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ultrasonic.d" -MT"ultrasonic.o" -c -o "ultrasonic.o" "../ultrasonic.c"
+In file included from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
+In file included from c:/winavr/lib/gcc/../../avr/include/avr/delay.h:37,
+                 from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../ultrasonic.c
+ 
+Building target: ultrasonic_reader.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ultrasonic_reader.map -mmcu=atmega32 -o "ultrasonic_reader.elf"  ./gpio.o ./icu.o ./lcd.o ./main.o ./ultrasonic.o   
+Finished building target: ultrasonic_reader.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ultrasonic_reader.elf  >"ultrasonic_reader.lss"
+Finished building: ultrasonic_reader.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ultrasonic_reader.elf  "ultrasonic_reader.hex"
+Finished building: ultrasonic_reader.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex ultrasonic_reader.elf  "ultrasonic_reader.eep"
+Finished building: ultrasonic_reader.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ultrasonic_reader.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9152 bytes (27.9% Full)
+(.text + .data + .bootloader)
+
+Data:         32 bytes (1.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:49:12 **** Incremental Build of configuration Debug for project ultrasonic_reader ****
+make all 
+Building file: ../ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ultrasonic.d" -MT"ultrasonic.o" -c -o "ultrasonic.o" "../ultrasonic.c"
+In file included from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
+In file included from c:/winavr/lib/gcc/../../avr/include/avr/delay.h:37,
+                 from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../ultrasonic.c
+ 
+Building target: ultrasonic_reader.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ultrasonic_reader.map -mmcu=atmega32 -o "ultrasonic_reader.elf"  ./gpio.o ./icu.o ./lcd.o ./main.o ./ultrasonic.o   
+Finished building target: ultrasonic_reader.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ultrasonic_reader.elf  >"ultrasonic_reader.lss"
+Finished building: ultrasonic_reader.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ultrasonic_reader.elf  "ultrasonic_reader.hex"
+Finished building: ultrasonic_reader.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex ultrasonic_reader.elf  "ultrasonic_reader.eep"
+Finished building: ultrasonic_reader.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ultrasonic_reader.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9862 bytes (30.1% Full)
+(.text + .data + .bootloader)
+
+Data:        288 bytes (14.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:52:01 **** Incremental Build of configuration Debug for project ultrasonic_reader ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:3:
+c:/winavr/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
+In file included from c:/winavr/lib/gcc/../../avr/include/avr/delay.h:37,
+                 from ../main.c:3:
+c:/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building file: ../ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ultrasonic.d" -MT"ultrasonic.o" -c -o "ultrasonic.o" "../ultrasonic.c"
+In file included from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
+In file included from c:/winavr/lib/gcc/../../avr/include/avr/delay.h:37,
+                 from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../ultrasonic.c
+ 
+Building target: ultrasonic_reader.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ultrasonic_reader.map -mmcu=atmega32 -o "ultrasonic_reader.elf"  ./gpio.o ./icu.o ./lcd.o ./main.o ./ultrasonic.o   
+Finished building target: ultrasonic_reader.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ultrasonic_reader.elf  >"ultrasonic_reader.lss"
+Finished building: ultrasonic_reader.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ultrasonic_reader.elf  "ultrasonic_reader.hex"
+Finished building: ultrasonic_reader.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex ultrasonic_reader.elf  "ultrasonic_reader.eep"
+Finished building: ultrasonic_reader.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ultrasonic_reader.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9862 bytes (30.1% Full)
+(.text + .data + .bootloader)
+
+Data:        288 bytes (14.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:52:23 **** Incremental Build of configuration Debug for project ultrasonic_reader ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:3:
+c:/winavr/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
+In file included from c:/winavr/lib/gcc/../../avr/include/avr/delay.h:37,
+                 from ../main.c:3:
+c:/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building file: ../ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ultrasonic.d" -MT"ultrasonic.o" -c -o "ultrasonic.o" "../ultrasonic.c"
+In file included from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
+In file included from c:/winavr/lib/gcc/../../avr/include/avr/delay.h:37,
+                 from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../ultrasonic.c
+ 
+Building target: ultrasonic_reader.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ultrasonic_reader.map -mmcu=atmega32 -o "ultrasonic_reader.elf"  ./gpio.o ./icu.o ./lcd.o ./main.o ./ultrasonic.o   
+Finished building target: ultrasonic_reader.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ultrasonic_reader.elf  >"ultrasonic_reader.lss"
+Finished building: ultrasonic_reader.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ultrasonic_reader.elf  "ultrasonic_reader.hex"
+Finished building: ultrasonic_reader.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex ultrasonic_reader.elf  "ultrasonic_reader.eep"
+Finished building: ultrasonic_reader.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ultrasonic_reader.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9862 bytes (30.1% Full)
+(.text + .data + .bootloader)
+
+Data:        288 bytes (14.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:56:01 **** Incremental Build of configuration Debug for project ultrasonic_reader ****
+make all 
+Building file: ../ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ultrasonic.d" -MT"ultrasonic.o" -c -o "ultrasonic.o" "../ultrasonic.c"
+In file included from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
+In file included from c:/winavr/lib/gcc/../../avr/include/avr/delay.h:37,
+                 from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../ultrasonic.c:71:3: warning: "/*" within comment
+../ultrasonic.c:61:2: error: unterminated comment
+../ultrasonic.c: In function 'Ultrasonic_edgeProcessing':
+../ultrasonic.c:60: error: expected declaration or statement at end of input
+../ultrasonic.c:58: warning: unused variable 'step'
+make: *** [ultrasonic.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+18:56:20 **** Incremental Build of configuration Debug for project ultrasonic_reader ****
+make all 
+Building file: ../ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ultrasonic.d" -MT"ultrasonic.o" -c -o "ultrasonic.o" "../ultrasonic.c"
+In file included from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
+In file included from c:/winavr/lib/gcc/../../avr/include/avr/delay.h:37,
+                 from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../ultrasonic.c:71:3: warning: "/*" within comment
+../ultrasonic.c:61:2: error: unterminated comment
+../ultrasonic.c: In function 'Ultrasonic_edgeProcessing':
+../ultrasonic.c:60: error: expected declaration or statement at end of input
+make: *** [ultrasonic.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+18:56:47 **** Incremental Build of configuration Debug for project ultrasonic_reader ****
+make all 
+Building file: ../ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ultrasonic.d" -MT"ultrasonic.o" -c -o "ultrasonic.o" "../ultrasonic.c"
+In file included from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
+In file included from c:/winavr/lib/gcc/../../avr/include/avr/delay.h:37,
+                 from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../ultrasonic.c
+ 
+Building target: ultrasonic_reader.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ultrasonic_reader.map -mmcu=atmega32 -o "ultrasonic_reader.elf"  ./gpio.o ./icu.o ./lcd.o ./main.o ./ultrasonic.o   
+Finished building target: ultrasonic_reader.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ultrasonic_reader.elf  >"ultrasonic_reader.lss"
+Finished building: ultrasonic_reader.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ultrasonic_reader.elf  "ultrasonic_reader.hex"
+Finished building: ultrasonic_reader.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex ultrasonic_reader.elf  "ultrasonic_reader.eep"
+Finished building: ultrasonic_reader.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ultrasonic_reader.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9828 bytes (30.0% Full)
+(.text + .data + .bootloader)
+
+Data:        289 bytes (14.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:57:56 **** Incremental Build of configuration Debug for project ultrasonic_reader ****
+make all 
+Building file: ../ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ultrasonic.d" -MT"ultrasonic.o" -c -o "ultrasonic.o" "../ultrasonic.c"
+In file included from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
+In file included from c:/winavr/lib/gcc/../../avr/include/avr/delay.h:37,
+                 from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../ultrasonic.c
+ 
+Building target: ultrasonic_reader.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ultrasonic_reader.map -mmcu=atmega32 -o "ultrasonic_reader.elf"  ./gpio.o ./icu.o ./lcd.o ./main.o ./ultrasonic.o   
+Finished building target: ultrasonic_reader.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ultrasonic_reader.elf  >"ultrasonic_reader.lss"
+Finished building: ultrasonic_reader.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ultrasonic_reader.elf  "ultrasonic_reader.hex"
+Finished building: ultrasonic_reader.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex ultrasonic_reader.elf  "ultrasonic_reader.eep"
+Finished building: ultrasonic_reader.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ultrasonic_reader.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9862 bytes (30.1% Full)
+(.text + .data + .bootloader)
+
+Data:        288 bytes (14.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+19:02:22 **** Incremental Build of configuration Debug for project ultrasonic_reader ****
+make all 
+Building file: ../ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ultrasonic.d" -MT"ultrasonic.o" -c -o "ultrasonic.o" "../ultrasonic.c"
+In file included from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
+In file included from c:/winavr/lib/gcc/../../avr/include/avr/delay.h:37,
+                 from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../ultrasonic.c
+ 
+Building target: ultrasonic_reader.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ultrasonic_reader.map -mmcu=atmega32 -o "ultrasonic_reader.elf"  ./gpio.o ./icu.o ./lcd.o ./main.o ./ultrasonic.o   
+Finished building target: ultrasonic_reader.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ultrasonic_reader.elf  >"ultrasonic_reader.lss"
+Finished building: ultrasonic_reader.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ultrasonic_reader.elf  "ultrasonic_reader.hex"
+Finished building: ultrasonic_reader.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex ultrasonic_reader.elf  "ultrasonic_reader.eep"
+Finished building: ultrasonic_reader.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ultrasonic_reader.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9862 bytes (30.1% Full)
+(.text + .data + .bootloader)
+
+Data:        288 bytes (14.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+19:04:57 **** Incremental Build of configuration Debug for project ultrasonic_reader ****
+make all 
+Building file: ../ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ultrasonic.d" -MT"ultrasonic.o" -c -o "ultrasonic.o" "../ultrasonic.c"
+In file included from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
+In file included from c:/winavr/lib/gcc/../../avr/include/avr/delay.h:37,
+                 from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../ultrasonic.c
+ 
+Building target: ultrasonic_reader.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ultrasonic_reader.map -mmcu=atmega32 -o "ultrasonic_reader.elf"  ./gpio.o ./icu.o ./lcd.o ./main.o ./ultrasonic.o   
+Finished building target: ultrasonic_reader.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ultrasonic_reader.elf  >"ultrasonic_reader.lss"
+Finished building: ultrasonic_reader.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ultrasonic_reader.elf  "ultrasonic_reader.hex"
+Finished building: ultrasonic_reader.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex ultrasonic_reader.elf  "ultrasonic_reader.eep"
+Finished building: ultrasonic_reader.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ultrasonic_reader.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9862 bytes (30.1% Full)
+(.text + .data + .bootloader)
+
+Data:        288 bytes (14.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+19:06:11 **** Incremental Build of configuration Debug for project ultrasonic_reader ****
+make all 
+Building file: ../ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ultrasonic.d" -MT"ultrasonic.o" -c -o "ultrasonic.o" "../ultrasonic.c"
+In file included from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
+In file included from c:/winavr/lib/gcc/../../avr/include/avr/delay.h:37,
+                 from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../ultrasonic.c
+ 
+Building target: ultrasonic_reader.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ultrasonic_reader.map -mmcu=atmega32 -o "ultrasonic_reader.elf"  ./gpio.o ./icu.o ./lcd.o ./main.o ./ultrasonic.o   
+Finished building target: ultrasonic_reader.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ultrasonic_reader.elf  >"ultrasonic_reader.lss"
+Finished building: ultrasonic_reader.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ultrasonic_reader.elf  "ultrasonic_reader.hex"
+Finished building: ultrasonic_reader.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex ultrasonic_reader.elf  "ultrasonic_reader.eep"
+Finished building: ultrasonic_reader.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ultrasonic_reader.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9864 bytes (30.1% Full)
+(.text + .data + .bootloader)
+
+Data:        288 bytes (14.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+19:06:32 **** Incremental Build of configuration Debug for project ultrasonic_reader ****
+make all 
+Building file: ../ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ultrasonic.d" -MT"ultrasonic.o" -c -o "ultrasonic.o" "../ultrasonic.c"
+In file included from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
+In file included from c:/winavr/lib/gcc/../../avr/include/avr/delay.h:37,
+                 from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../ultrasonic.c
+ 
+Building target: ultrasonic_reader.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ultrasonic_reader.map -mmcu=atmega32 -o "ultrasonic_reader.elf"  ./gpio.o ./icu.o ./lcd.o ./main.o ./ultrasonic.o   
+Finished building target: ultrasonic_reader.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ultrasonic_reader.elf  >"ultrasonic_reader.lss"
+Finished building: ultrasonic_reader.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ultrasonic_reader.elf  "ultrasonic_reader.hex"
+Finished building: ultrasonic_reader.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex ultrasonic_reader.elf  "ultrasonic_reader.eep"
+Finished building: ultrasonic_reader.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ultrasonic_reader.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9864 bytes (30.1% Full)
+(.text + .data + .bootloader)
+
+Data:        288 bytes (14.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+19:06:56 **** Incremental Build of configuration Debug for project ultrasonic_reader ****
+make all 
+Building file: ../ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ultrasonic.d" -MT"ultrasonic.o" -c -o "ultrasonic.o" "../ultrasonic.c"
+In file included from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
+In file included from c:/winavr/lib/gcc/../../avr/include/avr/delay.h:37,
+                 from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../ultrasonic.c
+ 
+Building target: ultrasonic_reader.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ultrasonic_reader.map -mmcu=atmega32 -o "ultrasonic_reader.elf"  ./gpio.o ./icu.o ./lcd.o ./main.o ./ultrasonic.o   
+Finished building target: ultrasonic_reader.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ultrasonic_reader.elf  >"ultrasonic_reader.lss"
+Finished building: ultrasonic_reader.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ultrasonic_reader.elf  "ultrasonic_reader.hex"
+Finished building: ultrasonic_reader.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex ultrasonic_reader.elf  "ultrasonic_reader.eep"
+Finished building: ultrasonic_reader.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ultrasonic_reader.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9864 bytes (30.1% Full)
+(.text + .data + .bootloader)
+
+Data:        288 bytes (14.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+19:07:31 **** Incremental Build of configuration Debug for project ultrasonic_reader ****
+make all 
+Building file: ../ultrasonic.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"ultrasonic.d" -MT"ultrasonic.o" -c -o "ultrasonic.o" "../ultrasonic.c"
+In file included from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
+In file included from c:/winavr/lib/gcc/../../avr/include/avr/delay.h:37,
+                 from ../ultrasonic.c:15:
+c:/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../ultrasonic.c
+ 
+Building target: ultrasonic_reader.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ultrasonic_reader.map -mmcu=atmega32 -o "ultrasonic_reader.elf"  ./gpio.o ./icu.o ./lcd.o ./main.o ./ultrasonic.o   
+Finished building target: ultrasonic_reader.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ultrasonic_reader.elf  >"ultrasonic_reader.lss"
+Finished building: ultrasonic_reader.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ultrasonic_reader.elf  "ultrasonic_reader.hex"
+Finished building: ultrasonic_reader.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex ultrasonic_reader.elf  "ultrasonic_reader.eep"
+Finished building: ultrasonic_reader.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ultrasonic_reader.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9866 bytes (30.1% Full)
+(.text + .data + .bootloader)
+
+Data:        288 bytes (14.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+19:07:53 **** Incremental Build of configuration Debug for project ultrasonic_reader ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:3:
+c:/winavr/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
+In file included from c:/winavr/lib/gcc/../../avr/include/avr/delay.h:37,
+                 from ../main.c:3:
+c:/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: ultrasonic_reader.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ultrasonic_reader.map -mmcu=atmega32 -o "ultrasonic_reader.elf"  ./gpio.o ./icu.o ./lcd.o ./main.o ./ultrasonic.o   
+Finished building target: ultrasonic_reader.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ultrasonic_reader.elf  >"ultrasonic_reader.lss"
+Finished building: ultrasonic_reader.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ultrasonic_reader.elf  "ultrasonic_reader.hex"
+Finished building: ultrasonic_reader.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex ultrasonic_reader.elf  "ultrasonic_reader.eep"
+Finished building: ultrasonic_reader.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ultrasonic_reader.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9866 bytes (30.1% Full)
+(.text + .data + .bootloader)
+
+Data:        288 bytes (14.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+19:08:18 **** Incremental Build of configuration Debug for project ultrasonic_reader ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:3:
+c:/winavr/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
+In file included from c:/winavr/lib/gcc/../../avr/include/avr/delay.h:37,
+                 from ../main.c:3:
+c:/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: ultrasonic_reader.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ultrasonic_reader.map -mmcu=atmega32 -o "ultrasonic_reader.elf"  ./gpio.o ./icu.o ./lcd.o ./main.o ./ultrasonic.o   
+Finished building target: ultrasonic_reader.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ultrasonic_reader.elf  >"ultrasonic_reader.lss"
+Finished building: ultrasonic_reader.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ultrasonic_reader.elf  "ultrasonic_reader.hex"
+Finished building: ultrasonic_reader.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex ultrasonic_reader.elf  "ultrasonic_reader.eep"
+Finished building: ultrasonic_reader.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ultrasonic_reader.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9626 bytes (29.4% Full)
+(.text + .data + .bootloader)
+
+Data:        288 bytes (14.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+19:10:24 **** Incremental Build of configuration Debug for project ultrasonic_reader ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ultrasonic_reader.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9626 bytes (29.4% Full)
+(.text + .data + .bootloader)
+
+Data:        288 bytes (14.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
